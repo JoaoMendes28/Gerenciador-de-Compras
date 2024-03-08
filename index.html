@@ -4,60 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7DaysofCode</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/carrinho-de-compras.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
     <div class="container">
-        <div class="left-list">
-            <h1 class="left-title">Organize a sua ida ao mercado com a nossa Lista de compras!</h1>
-            <div class="form-add">
-                <h2>Adicionar produto a lista de compras</h2>
-                <input class="add-input" id="add-item" type="text">
-                
-                <label>Escolha uma categoria:</label>
-                <select id="category">
-                    <option class="option" value="Fruta">Frutas</option>
-                    <option class="option" value="Laticinio">Laticínios</option>
-                    <option class="option" value="Bebida">Bebidas</option>
-                    <option class="option" value="Carne">Carnes</option>
-                    <option class="option" value="Carboidrato">Carboidratos</option>
-                </select>
-                
-                <button class="add-btn" onclick="onButton()">ADICIONAR</button>
-            </div>
-        </div>
+      <div class="left-list">
+        <h1 class="left-title">
+          Organize a sua ida ao mercado com o nosso gerenciador de compras!
+        </h1>
+        <div class="form-add">
+          <h2>Adicionar produto a lista de compras</h2>
+          <input class="add-input" id="add-item" type="text" />
 
-        <div class="right-list">
-            <div class="right-content">
-                <div class="screen">
-                    <h3 id="display_1"></h3>        
-                    <input id="remove-input-1" class="remove-input" type="text">
-                    <button class="remove-btn" onclick="removeItem()">REMOVER</button> 
-                </div>
-                <div class="screen">
-                    <h3 id="display_2"></h3>        
-                    <input id="remove-input-2" class="remove-input" type="text">
-                    <button class="remove-btn" onclick="removeItem()">REMOVER</button> 
-                </div>
-                <div class="screen">
-                    <h3 id="display_3"></h3>        
-                    <input id="remove-input-3" class="remove-input" type="text">
-                    <button class="remove-btn" onclick="removeItem()">REMOVER</button> 
-                </div>
-                <div class="screen">
-                    <h3 id="display_4"></h3>        
-                    <input id="remove-input-4" class="remove-input" type="text">
-                    <button class="remove-btn" onclick="removeItem()">REMOVER</button> 
-                </div>
-                <div class="screen">
-                    <h3 id="display_5"></h3>        
-                    <input id="remove-input-5" class="remove-input" type="text">
-                    <button class="remove-btn" onclick="removeItem()">REMOVER</button> 
-                </div>
-            </div>
-        </div>            
-    </div> 
+          <label>Escolha uma categoria:</label>
+          <select id="category">
+            <option class="option" value="Fruta">Frutas</option>
+            <option class="option" value="Laticinio">Laticínios</option>
+            <option class="option" value="Bebida">Bebidas</option>
+            <option class="option" value="Carne">Carnes</option>
+            <option class="option" value="Carboidrato">Carboidratos</option>
+          </select>
+
+          <button class="add-btn" onclick="onButton()">ADICIONAR</button>
+        </div>
+      </div>
+
+      <div class="right-list">
+        <div class="right-content">
+          <div class="screen">
+            <h3 id="display_1"></h3>
+          </div>
+          <div class="screen">
+            <h3 id="display_2"></h3>
+          </div>
+          <div class="screen">
+            <h3 id="display_3"></h3>
+          </div>
+          <div class="screen">
+            <h3 id="display_4"></h3>
+          </div>
+          <div class="screen">
+            <h3 id="display_5"></h3>
+          </div>
+          <div class="remove-content">
+            <input id="remove-input-1" class="remove-input" type="text" />
+            <button class="remove-btn" onclick="removeItem()"><img class="button-img-remove" src="./assets/cartRemove.ico" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
